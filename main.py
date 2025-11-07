@@ -1,5 +1,7 @@
 from functions import add_items_to_cart, get_mqtt_token, send_pushover, get_product, get_product_info, send_ha_notification
 
+send_ha_notification("Scanner ready")
+
 while True:
     print("Waiting for input")
     upc = input()
