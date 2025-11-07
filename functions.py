@@ -118,8 +118,7 @@ def get_product_info(product):
 
 # Replace with your Home Assistant URL and Long-Lived Access Token
 HA_URL = "http://192.168.1.240:8123"
-ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJlYmM0MDlhOTU0NGY0YTBhYjU5Yzg5NTU0M2VkM2I3YSIsImlhdCI6MTc2MjUzNzE4NiwiZXhwIjoyMDc3ODk3MTg2fQ.9KLhS8jZCS2ZrG7BiZ3ufxSSBxuJrn_YoAMvzq_Hygg" # Create one in your HA Profile
-
+ACCESS_TOKEN = ""
 def send_ha_notification(message, title="Scanner Notification", target=None):
     """Sends a notification to Home Assistant."""
     headers = {
