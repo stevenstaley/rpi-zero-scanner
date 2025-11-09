@@ -21,17 +21,6 @@ def get_mqtt_token():
     decoded_string = msg.payload.decode("utf-8")
     return decoded_string
 
-
-def send_pushover(message):
-    conn = http.client.HTTPSConnection("api.pushover.net:443")
-    conn.request("POST", "/1/messages.json",
-    urllib.parse.urlencode({
-        "token": "a8mfviujxzisy3qzkaryxprwytro4x",
-        "user": "ud6ovoiyng3hydv896jzj6sbtm4tca",
-        "message": message,
-    }), { "Content-type": "application/x-www-form-urlencoded" })
-    conn.getresponse()
-
 ############################################################
 #               Get Product Function                       #
 ############################################################
